@@ -4,7 +4,7 @@ total_tests = len(scores)
 
 while (index < total_tests):
     # Print the bubble solution statement
-    print("Bubble solution #", index, "score:", scores[index])
+    print("Bubble solution #" + str(index), "score:", scores[index])
 
     # Increment the index by 1
     index = index + 1
