@@ -18,6 +18,7 @@ cost = 100.0
 most_effective = 0
 
 for i in range(length):
+    #This print statement does require looping
     #print Bubble solutions
     print('Bubble solution #' + str(i), 'score:', scores[i])
     if scores[i] > high_score:
@@ -27,6 +28,8 @@ for i in range(length):
     if cost > costs[i]:
         most_effective = i
         cost = costs[i]
+
+#These print statements do not require looping
 #print number of bubble tests
 print('Bubbles tests:', length)
 #print the highest bubble score
