@@ -28,11 +28,11 @@ for i in range(length):
         most_effective = i
         cost = costs[i]
 #print number of bubble tests
-    print('Bubbles tests:', length)
+print('Bubbles tests:', length)
 #print the highest bubble score
-    print('Highest bubble score:', high_score)
+print('Highest bubble score:', high_score)
 #print the solutions with the highest score
-    print('Solutions with the highest score:', best_solutions)
+print('Solutions with the highest score:', best_solutions)
 #print the most effective solution and its related cost
-    print('Solution', most_effective,
-          'is the most effective with a cost of', costs[most_effective])
+print('Solution', most_effective,
+      'is the most effective with a cost of', costs[most_effective])
