@@ -12,34 +12,27 @@ costs = [.25, .27, .25, .25, .25, .25, .33,
          .24, .25, .25, .25, .27, .25, .26, .29]
 
 best_solutions = []
-
 high_score = 0
 length = len(scores)
 cost = 100.0
 most_effective = 0
-index = best_solutions[i]
 
 for i in range(length):
+    #print Bubble solutions
+    print('Bubble solution #' + str(i), 'score:', scores[i])
     if scores[i] > high_score:
         high_score = scores[i]
     if scores[i] == high_score:     
         best_solutions.append(i)
-    if cost > costs[index]:
-        most_effective = index
-        cost = costs[index]
-
-#print Bubble solutions
-print('Bubble solution #' + str(i), 'score:', scores[i])
-   
+    if cost > costs[i]:
+        most_effective = i
+        cost = costs[i]
 #print number of bubble tests
-print('Bubbles tests:', length)
-    
+    print('Bubbles tests:', length)
 #print the highest bubble score
-print('Highest bubble score:', high_score)
-
+    print('Highest bubble score:', high_score)
 #print the solutions with the highest score
-print('Solutions with the highest score:', best_solutions)
-
+    print('Solutions with the highest score:', best_solutions)
 #print the most effective solution and its related cost
-print('Solution', most_effective,
-      'is the most effective with a cost of', costs[most_effective])
+    print('Solution', most_effective,
+          'is the most effective with a cost of', costs[most_effective])
